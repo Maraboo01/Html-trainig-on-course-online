@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.main {
+    height: 100vh;
+    background-color: #EFF2F9;
+}
+
+.card {
+    width: 1170px;
+    height: 800px;
+    box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
+    background-color: #fff;
+    padding: 60px 0 70px;
+}
+.product-img-block {
+    border-right:2px solid rgba(20, 20, 20, 0.15);
+    width: 540px;
+}
+
+.preview {
+    width: 80px;
+    height: 80px;
+    box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
+    background: #fff;
+}
+.product-info-block {
+    padding: 0 60px;
+
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    letter-spacing: 0.01em;
+    color: rgba(20, 20, 20, 0.9);
+}
+.subtitle{
+font-family: "Lato", sans-serif;
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 0.01em;
+color: rgba(20, 20, 20, 0.4);
+}
+.text {
+
+font-family: "Rubik", sans-serif;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.66667;
+letter-spacing: 0.01em;
+color: rgba(20, 20, 20, 0.7);
+}
+.title {
+font-family: "Lato", sans-serif;
+font-weight: 400;
+font-size: 16px;
+letter-spacing: 0.01em;
+text-transform: uppercase;
+color: rgba(20, 20, 20, 0.4);
+}
+ul {
+list-style: none;
+}
