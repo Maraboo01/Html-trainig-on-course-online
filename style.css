@@ -112,7 +112,7 @@ li.selected {
 .quantity {
     width: 80px; 
  
-    
+
     font-family: Rubik;
     font-size: 20px;
     font-style: normal;
@@ -122,6 +122,7 @@ li.selected {
  
     border: none; 
     appearance: none; 
+ 
  
     background-image: url("./assets/images/arrow-bottom.svg");
     background-repeat: no-repeat;
