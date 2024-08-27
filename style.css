@@ -17,6 +17,9 @@
   section {
     background: #eff2f9;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
   }
   
   .card {
@@ -25,26 +28,75 @@
     background: #fff;
     box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
     padding: 60px 0 70px;
+    display:flex;
   }
   
   
   .product-image-block {
     border-right: 2px solid rgba(20, 20, 20, 0.15);
     width: 540px;
+    min-width: 540px;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-image-wrapper {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
   }
   
   .preview {
     width: 80px;
     height: 80px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
   }
   
+ 
+  .preview:hover,
   .preview.selected {
     box-shadow: 8px 8px 16px 0px rgba(81, 91, 117, 0.25);
+}
+
+  
+  .previews-wrapper {
+    display: flex;
+    justify-content: center; 
+    gap: 60px;
   }
-  
-  
+  .color-items > li {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .color-items {
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+  }
+  .color-items > li:hover,
+  .color-items > li.selected {
+    box-shadow: 2px 2px 6px 0px rgba(81, 91, 117, 0.25);
+}
+
+
+  .wrapper{
+  display: flex;
+  }
+  .wrapper > div {
+    flex-grow: 1;
+  }
+
   .product-info-block {
     padding: 0 60px;
+    display: flex;
+    flex-direction: column;
   }
   
   .main-title {
@@ -120,6 +172,7 @@
   } 
   
   .quantity {
+    font-family: inherit;
     width: 80px;
     font-size: 20px;
     font-weight: 500;
@@ -129,6 +182,7 @@
     background-image: url("./assets/images/arrow-bottom.svg");
     background-repeat: no-repeat;
     background-position: right 0 top 50%;
+    cursor: pointer;
   }
   
   .price {
@@ -148,4 +202,9 @@
     font-weight: 500;
     letter-spacing: 0.18px;
     margin-top: 75px;
+    cursor: pointer;
+    transition: 0.2s;
   } 
+  .btn:hover {
+    transform: translateY(-5px);
+}
